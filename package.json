@@ -1,0 +1,84 @@
+{
+  "name": "sino-components",
+  "description": "React components created by Sino Inc.",
+  "version": "0.1.0",
+  "main": "index.js",
+  "homepage": "https://github.com/sinoxx/common-components",
+  "author": "Sino Dev Team <dev@sinoxx.com>",
+  "repository": "sinoxx/common-components",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "styleguidist server",
+    "build": "styleguidist build"
+  },
+  "dependencies": {
+    "antd": "^3.11.2",
+    "babel-polyfill": "^6.26.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^2.0.1",
+    "eslint": "^5.10.0",
+    "eslint-config-nake-app": "0.3.0",
+    "eslint-plugin-compat": "^2.6.3",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "file-loader": "^2.0.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "prettier": "^1.15.3",
+    "react-styleguidist": "^8.0.6",
+    "style-loader": "^0.23.1",
+    "stylelint": "^9.9.0",
+    "stylelint-config-nake-app": "0.6.0",
+    "stylelint-declaration-block-no-ignored-properties": "^1.1.0",
+    "stylelint-no-unsupported-browser-features": "^3.0.2",
+    "stylelint-order": "^2.0.0",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.27.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 11",
+    "not op_mini all",
+    "not dead"
+  ],
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "all",
+    "printWidth": 100
+  },
+  "eslintConfig": {
+    "extends": [
+      "nake-app"
+    ],
+    "settings": {
+      "polyfills": []
+    }
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-nake-app"
+    ],
+    "rules": {
+      "plugin/no-unsupported-browser-features": [
+        true,
+        {
+          "severity": "warning",
+          "ignore": []
+        }
+      ]
+    }
+  }
+}
