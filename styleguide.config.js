@@ -31,13 +31,6 @@ module.exports = {
           test: /\.less$/,
           loader: 'style-loader!css-loader!less-loader',
         },
-        {
-          test: /\.svg$/,
-          loader: 'file-loader',
-          query: {
-            name: 'static/media/[name].[hash:8].[ext]',
-          },
-        },
       ],
     },
   },
